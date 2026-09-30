@@ -1,0 +1,10 @@
+UPLOAD THIS FOLDER TO GITHUB
+
+1. Upload index.html
+2. Upload sang-rahiyo.mp3
+3. Upload our-video.mp4
+4. Upload the images folder containing photo1.jpg, photo2.jpg, photo3.jpg
+
+Keep the names exactly the same.
+
+Then enable GitHub Pages: Repository -> Settings -> Pages -> Deploy from a branch -> main -> / (root) -> Save.

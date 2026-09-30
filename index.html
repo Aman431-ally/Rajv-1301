@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rajv & Aman — Anniversary</title>
+<meta name="description" content="A private anniversary memory page with photos, video and music.">
+<style>
+:root{--rose:#e96b8a;--deep:#24141c;--cream:#fff8f7;--gold:#d7aa62}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;background:linear-gradient(180deg,#fff8f7,#f8e8ed 55%,#fff);color:var(--deep)}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px 20px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:-20%;background:radial-gradient(circle at 20% 20%,#ffd9e3 0 10%,transparent 25%),radial-gradient(circle at 80% 70%,#f4d5df 0 12%,transparent 28%);opacity:.8}
+.hero-inner{position:relative;max-width:850px}
+.kicker{letter-spacing:4px;text-transform:uppercase;font:600 12px Arial,sans-serif;color:#9a5065}
+h1{font-size:clamp(48px,10vw,92px);line-height:.95;margin:18px 0 14px;font-weight:500}
+.subtitle{font-size:clamp(18px,3vw,26px);margin:0 auto 30px;max-width:650px;line-height:1.5}
+.btn{display:inline-block;border:0;border-radius:999px;background:var(--deep);color:#fff;text-decoration:none;padding:13px 22px;margin:6px;font:600 14px Arial,sans-serif;cursor:pointer}
+.btn.alt{background:#fff;color:var(--deep);border:1px solid #e5c9d1}
+section{padding:72px 20px;max-width:1050px;margin:auto}
+h2{text-align:center;font-size:clamp(30px,5vw,46px);font-weight:500;margin:0 0 12px}
+.lead{text-align:center;max-width:680px;margin:0 auto 34px;font:16px/1.7 Arial,sans-serif;color:#6b5960}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border-radius:22px;padding:10px;box-shadow:0 15px 40px rgba(73,33,46,.12)}
+.card img{width:100%;height:460px;object-fit:cover;border-radius:16px;display:block}
+.video-wrap{background:#fff;border-radius:24px;padding:12px;box-shadow:0 15px 40px rgba(73,33,46,.12);max-width:560px;margin:auto}
+video{width:100%;border-radius:16px;display:block;background:#111}
+.music{background:var(--deep);color:#fff;border-radius:26px;padding:30px;text-align:center}
+.music p{font:15px/1.6 Arial,sans-serif;color:#e9dbe0}
+audio{width:min(100%,650px);margin-top:8px}
+.letter{background:#fff;border-radius:26px;padding:38px;box-shadow:0 15px 40px rgba(73,33,46,.10);font-size:20px;line-height:1.8;text-align:center}
+footer{text-align:center;padding:40px 20px;font:12px Arial,sans-serif;color:#8b747c}
+.heart{position:absolute;font-size:34px;opacity:.25;animation:float 7s ease-in-out infinite}
+.heart.one{left:7%;top:20%}.heart.two{right:9%;top:30%;animation-delay:1s}.heart.three{left:16%;bottom:16%;animation-delay:2s}.heart.four{right:17%;bottom:20%;animation-delay:3s}
+@keyframes float{50%{transform:translateY(-22px) rotate(8deg)}}
+@media(max-width:760px){.gallery{grid-template-columns:1fr}.card img{height:auto;max-height:none}.hero{min-height:90vh}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="heart one">♥</div><div class="heart two">♥</div><div class="heart three">♥</div><div class="heart four">♥</div>
+  <div class="hero-inner">
+    <div class="kicker">Rajv-Aman Anniversary</div>
+    <h1>Forever, With You ❤️</h1>
+    <p class="subtitle">A little corner of the internet for our favorite memories, our special moment, and the song that belongs to us.</p>
+    <a class="btn" href="#memories">View Memories</a>
+    <a class="btn alt" href="#music">Play Our Song</a>
+  </div>
+</header>
+
+<section id="memories">
+  <h2>Our Memories</h2>
+  <p class="lead">Three moments, one beautiful story.</p>
+  <div class="gallery">
+    <div class="card"><img src="images/photo1.jpg" alt="Rajv and Aman together"></div>
+    <div class="card"><img src="images/photo2.jpg" alt="A proposal moment"></div>
+    <div class="card"><img src="images/photo3.jpg" alt="A special memory together"></div>
+  </div>
+</section>
+
+<section>
+  <h2>Our Special Moment 🎬</h2>
+  <p class="lead">Press play to watch the memory you added to this page.</p>
+  <div class="video-wrap">
+    <video controls playsinline preload="metadata" poster="images/photo2.jpg">
+      <source src="our-video.mp4" type="video/mp4">
+      Your browser does not support video playback.
+    </video>
+  </div>
+</section>
+
+<section id="music">
+  <div class="music">
+    <h2>Our Song 🎵</h2>
+    <p>Tap play below. Browsers normally require a tap before audio can start, so the music is intentionally controlled by this player.</p>
+    <audio controls preload="metadata">
+      <source src="sang-rahiyo.mp3" type="audio/mpeg">
+      Your browser does not support audio playback.
+    </audio>
+  </div>
+</section>
+
+<section>
+  <div class="letter">
+    “Some memories become photographs. Some become stories. And some become a song you never want to stop hearing.” ❤️
+  </div>
+</section>
+
+<footer>Made with love • Rajv-Aman Anniversary</footer>
+</body>
+</html>
